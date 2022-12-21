@@ -20,8 +20,9 @@ public class CustomerServiceApplication {
 		return args -> {
 			customerRepository.saveAll(List.of(
 					Customer.builder().name("Arnold TCHUISSEU").email("arnold@gmail.com").build(),
-					Customer.builder().name("Mamadou MOUSSA").email("moussa@gmail.com").build(),
-					Customer.builder().name("Amine BARRAK").email("amine@gmail.com").build()
+					Customer.builder().name("Mamadou Moussa DIALLO").email("moussa@gmail.com").build(),
+					Customer.builder().name("Amine BARRAK").email("amine@gmail.com").build(),
+					Customer.builder().name("William NANMOUO").email("william@gmail.com").build()
 			));
 			customerRepository.findAll().forEach(System.out::println);
 		};
